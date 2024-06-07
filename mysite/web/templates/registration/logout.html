@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container d-flex align-items-center justify-content-center" style="height: 100vh; background-color: #e8f5e9;">
+  <div class="logout-container text-center">
+    <h2>Adiós</h2>
+    <p>Has cerrado sesión exitosamente.</p>
+    <a href="{% url 'login' %}" class="btn btn-primary">Iniciar sesión nuevamente</a>
+  </div>
+</div>
+
+<style>
+  .logout-container {
+    background-color: #ffffff; /* Fondo blanco para el contenedor */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Ancho fijo para el contenedor */
+  }
+  .logout-container h2 {
+    color: #388e3c; /* Color de encabezado verde */
+    margin-bottom: 20px;
+  }
+  .logout-container p {
+    color: #388e3c; /* Color del texto */
+    margin-bottom: 20px;
+  }
+  .logout-container .btn-primary {
+    background-color: #4caf50; /* Fondo del botón verde */
+    border-color: #4caf50;
+    width: 100%; /* Ancho completo para el botón */
+  }
+  .logout-container .btn-primary:hover {
+    background-color: #388e3c; /* Fondo del botón verde oscuro al pasar el ratón */
+    border-color: #388e3c;
+  }
+</style>
+
+{% endblock %}

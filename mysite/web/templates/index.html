@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+
+{% block title %}Página de Inicio{% endblock %}
+{% load static %}
+{% block extra_head %}
+  <!-- Añadir favicon -->
+  <link rel="icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
+{% endblock %}
+{% block content %}
+<div class="section properties" style="height: 700px; overflow-y: auto; overflow-x: hidden; background-color: #e8f5e9;">
+  <div class="container">
+    <ul class="properties-filter list-inline text-center mb-4">
+      <li class="list-inline-item">
+        <a class="is_active text-success btn btn-green" href="#!" data-filter="*">Todos</a>
+      </li>
+      <li class="list-inline-item">
+        <a class="text-success btn btn-green" href="#!" data-filter=".adv">Casas</a>
+      </li>
+      <li class="list-inline-item">
+        <a class="text-success btn btn-green" href="#!" data-filter=".str">Departamentos</a>
+      </li>
+      <li class="list-inline-item">
+        <a class="text-success btn btn-green" href="#!" data-filter=".rac">Parcelas</a>
+      </li>
+    </ul>
+    
+    <div class="row properties-box">
+      {% for inm in inmuebles %}
+      <div class="col-lg-4 col-md-6 mb-30 properties-items {% if inm.tipo_de_inmueble == 'casa' %} adv {% elif inm.tipo_de_inmueble == 'departamento' %} str {% elif inm.tipo_de_inmueble == 'parcela' %} rac {% endif %}">
+        <div class="item p-3 shadow-sm rounded" style="background-color: #ffffff;">
+          <a href="{% url 'detalle' inm.id %}"><img src="/media/{{inm.imagen}}" alt="" class="img-fluid rounded mb-2"></a>
+          <span class="category badge badge-success">{{inm.tipo_de_inmueble}}</span>
+          <h6 class="text-success">${{ inm.precio|floatformat:'-3g' }}</h6>
+          <h4><a href="{% url 'detalle' inm.id %}" class="text-dark">{{ inm.descripcion }}</a></h4>
+          <ul class="list-unstyled">
+            <li>Habitaciones: <span>{{ inm.cantidad_habitaciones }}</span></li>
+            <li>Baños: <span>{{ inm.cantidad_banos }}</span></li>
+            <li>Área: <span>{{inm.m2_construidos}}</span> m²</li>
+            <li>Pisos: <span>3</span></li>
+            <li>Estacionamientos: <span>{{inm.cantidad_estacionamientos}}</span></li>
+          </ul>
+          <div class="main-button">
+            <a href="{% url 'detalle' inm.id %}" class="btn btn-success">Ver Detalles</a>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<style>
+  body {
+    background-color: #e8f5e9; /* Fondo verde claro */
+  }
+
+  .properties-filter a {
+    color: #4caf50; /* Verde principal para enlaces */
+  }
+
+  .properties-filter a.is_active,
+  .properties-filter a:hover {
+    background-color: #ffeb3b; /* Fondo amarillo para botones activos y al pasar el ratón */
+    border-color: #ffeb3b;
+    color: #000000; /* Color de texto negro para botones activos y al pasar el ratón */
+  }
+
+  .properties-filter a.is_active:hover {
+    background-color: #ffea00; /* Tonos más oscuros de amarillo para botones activos y al pasar el ratón */
+    border-color: #ffea00;
+  }
+</style>
+{% endblock %}

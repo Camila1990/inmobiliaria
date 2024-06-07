@@ -1,0 +1,243 @@
+[
+    {
+        "model": "web.inmueble",
+        "pk": 1,
+        "fields": {
+            "nombre": "Casona en el humedal",
+            "direccion": "Calle Bosque, número 15",
+            "descripcion": "Hermosa casa colonial ubicada próxima a humedal y naturaleza.",
+            "imagen": "single-property.jpg",
+            "precio": "2000000",
+            "comuna": 14,
+            "disponible": true,
+            "m2_construidos": "500.00",
+            "m2_terreno": "2000.00",
+            "cantidad_estacionamientos": 5,
+            "cantidad_habitaciones": 10,
+            "cantidad_banos": 6,
+            "tipo_de_inmueble": "casa",
+            "propietario": 1
+        }
+    },
+        {
+            "model": "web.inmueble",
+            "pk": 2,
+            "fields": {
+                "nombre": "Departamento en la ciudad",
+                "direccion": "Avenida Central, número 100",
+                "descripcion": "Moderno departamento en pleno centro de la ciudad, cerca de todos los servicios. Ideal para quienes buscan comodidad y accesibilidad.",
+                "imagen": "city-apartment.jpg",
+                "precio": "1500000",
+                "comuna": 5,
+                "disponible": true,
+                "m2_construidos": "120.00",
+                "m2_terreno": "120.00",
+                "cantidad_estacionamientos": 1,
+                "cantidad_habitaciones": 3,
+                "cantidad_banos": 2,
+                "tipo_de_inmueble": "departamento",
+                "propietario": 2
+            }
+        },
+        {
+            "model": "web.inmueble",
+            "pk": 3,
+            "fields": {
+                "nombre": "Parcela en el campo",
+                "direccion": "Ruta 5 Sur, km 300",
+                "descripcion": "Amplia parcela con vistas panorámicas al campo, ideal para proyectos agrícolas o de turismo rural.",
+                "imagen": "country-parcel.jpg",
+                "precio": "5000000",
+                "comuna": 12,
+                "disponible": true,
+                "m2_construidos": "300.00",
+                "m2_terreno": "10000.00",
+                "cantidad_estacionamientos": 4,
+                "cantidad_habitaciones": 5,
+                "cantidad_banos": 3,
+                "tipo_de_inmueble": "parcela",
+                "propietario": 3
+            }
+        },
+        {
+            "model": "web.inmueble",
+            "pk": 4,
+            "fields": {
+                "nombre": "Casa en la playa",
+                "direccion": "Avenida del Mar, número 45",
+                "descripcion": "Hermosa casa frente al mar, perfecta para disfrutar de vacaciones en familia. Incluye piscina y acceso directo a la playa.",
+                "imagen": "beach-house.jpg",
+                "precio": "3000000",
+                "comuna": 9,
+                "disponible": true,
+                "m2_construidos": "250.00",
+                "m2_terreno": "800.00",
+                "cantidad_estacionamientos": 2,
+                "cantidad_habitaciones": 4,
+                "cantidad_banos": 3,
+                "tipo_de_inmueble": "casa",
+                "propietario": 4
+            }
+        },
+        {
+            "model": "web.inmueble",
+            "pk": 5,
+            "fields": {
+                "nombre": "Departamento moderno",
+                "direccion": "Calle Nueva, número 120",
+                "descripcion": "Elegante departamento en un edificio de reciente construcción, con todas las comodidades y seguridad.",
+                "imagen": "modern-apartment.jpg",
+                "precio": "1800000",
+                "comuna": 3,
+                "disponible": true,
+                "m2_construidos": "110.00",
+                "m2_terreno": "110.00",
+                "cantidad_estacionamientos": 2,
+                "cantidad_habitaciones": 2,
+                "cantidad_banos": 2,
+                "tipo_de_inmueble": "departamento",
+                "propietario": 5
+            }
+        },
+        {
+            "model": "web.inmueble",
+            "pk": 6,
+            "fields": {
+                "nombre": "Casa en la montaña",
+                "direccion": "Camino a la Cumbre, número 10",
+                "descripcion": "Acogedora casa de montaña con chimenea y grandes ventanales para disfrutar de las vistas al valle.",
+                "imagen": "mountain-house.jpg",
+                "precio": "2200000",
+                "comuna": 7,
+                "disponible": true,
+                "m2_construidos": "200.00",
+                "m2_terreno": "500.00",
+                "cantidad_estacionamientos": 3,
+                "cantidad_habitaciones": 3,
+                "cantidad_banos": 2,
+                "tipo_de_inmueble": "casa",
+                "propietario": 6
+            }
+        },
+        {
+            "model": "web.inmueble",
+            "pk": 7,
+            "fields": {
+                "nombre": "Parcela con viñedos",
+                "direccion": "Camino al Vino, km 20",
+                "descripcion": "Exclusiva parcela con viñedos en producción, perfecta para amantes del vino y la naturaleza.",
+                "imagen": "vineyard-parcel.jpg",
+                "precio": "6000000",
+                "comuna": 11,
+                "disponible": true,
+                "m2_construidos": "400.00",
+                "m2_terreno": "15000.00",
+                "cantidad_estacionamientos": 5,
+                "cantidad_habitaciones": 6,
+                "cantidad_banos": 4,
+                "tipo_de_inmueble": "parcela",
+                "propietario": 7
+            }
+        },
+        {
+            "model": "web.inmueble",
+            "pk": 8,
+            "fields": {
+                "nombre": "Departamento con vista al parque",
+                "direccion": "Calle Verde, número 25",
+                "descripcion": "Luminoso departamento con amplias ventanas y balcón con vista al parque central.",
+                "imagen": "park-view-apartment.jpg",
+                "precio": "1700000",
+                "comuna": 4,
+                "disponible": true,
+                "m2_construidos": "130.00",
+                "m2_terreno": "130.00",
+                "cantidad_estacionamientos": 1,
+                "cantidad_habitaciones": 3,
+                "cantidad_banos": 2,
+                "tipo_de_inmueble": "departamento",
+                "propietario": 8
+            }
+        },
+        {
+            "model": "web.inmueble",
+            "pk": 9,
+            "fields": {
+                "nombre": "Casa familiar",
+                "direccion": "Pasaje Familiar, número 50",
+                "descripcion": "Espaciosa casa ideal para familias grandes, con jardín y zona de juegos para niños.",
+                "imagen": "family-house.jpg",
+                "precio": "2500000",
+                "comuna": 6,
+                "disponible": true,
+                "m2_construidos": "300.00",
+                "m2_terreno": "1000.00",
+                "cantidad_estacionamientos": 4,
+                "cantidad_habitaciones": 5,
+                "cantidad_banos": 3,
+                "tipo_de_inmueble": "casa",
+                "propietario": 9
+            }
+        },
+        {
+            "model": "web.inmueble",
+            "pk": 10,
+            "fields": {
+                "nombre": "Parcela en zona rural",
+                "direccion": "Ruta 8, km 150",
+                "descripcion": "Gran parcela en una tranquila zona rural, ideal para el descanso y actividades al aire libre.",
+                "imagen": "rural-parcel.jpg",
+                "precio": "4500000",
+                "comuna": 10,
+                "disponible": true,
+                "m2_construidos": "350.00",
+                "m2_terreno": "12000.00",
+                "cantidad_estacionamientos": 3,
+                "cantidad_habitaciones": 4,
+                "cantidad_banos": 2,
+                "tipo_de_inmueble": "parcela",
+                "propietario": 10
+            }
+        },
+        {
+            "model": "web.inmueble",
+            "pk": 11,
+            "fields": {
+                "nombre": "Departamento en zona comercial",
+                "direccion": "Avenida Comercio, número 75",
+                "descripcion": "Departamento céntrico cerca de centros comerciales y restaurantes, perfecto para quienes disfrutan de la vida urbana.",
+                "imagen": "commercial-area-apartment.jpg",
+                "precio": "1400000",
+                "comuna": 2,
+                "disponible": true,
+                "m2_construidos": "100.00",
+                "m2_terreno": "100.00",
+                "cantidad_estacionamientos": 1,
+                "cantidad_habitaciones": 2,
+                "cantidad_banos": 1,
+                "tipo_de_inmueble": "departamento",
+                "propietario": 11
+            }
+        },
+            {
+                "model": "web.inmueble",
+                "pk": 12,
+                "fields": {
+                    "nombre": "Casa con jardín amplio",
+                    "direccion": "Calle Las Flores, número 30",
+                    "descripcion": "Encantadora casa con un gran jardín ideal para reuniones y actividades al aire libre. Ubicada en un barrio tranquilo.",
+                    "imagen": "garden-house.jpg",
+                    "precio": "2600000",
+                    "comuna": 8,
+                    "disponible": true,
+                    "m2_construidos": "220.00",
+                    "m2_terreno": "900.00",
+                    "cantidad_estacionamientos": 2,
+                    "cantidad_habitaciones": 4,
+                    "cantidad_banos": 3,
+                    "tipo_de_inmueble": "casa",
+                    "propietario": 12
+                }
+            }
+        ]
+        
